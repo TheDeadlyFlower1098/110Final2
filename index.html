@@ -37,24 +37,67 @@
     <!-- About Me -->
     <section id="about" class="about">
         <h2>About Me</h2>
-        <p>[Brief bio about yourself, your education, and areas of interest]</p>
+        <p>I'm a college student currently pursuing a degree in Computer Software Engineering Technology at Thaddeus Stevens College of Technology.
+             My academic journey has deepened my interest in artificial intelligence (AI) development, digital marketing and e-commerce, 
+             social media and networking, and more. I'm passionate about back-end programming and game development. 
+             While I have the skills to do web development, my true interests lie in user experience design and creative writing, 
+             which help me effectively communicate complex ideas. 
+             In my spare time, i enjoy exploring the latest technology trends often times on social media. 
+             I often tune into Thor's streams from PirateSoftware, who is a driving force behind my interests in technology.</p>
         <img src="unknown-4.webp" alt="Kalli Putt (Me)" class="profile-photo">
         <a href="resume.pdf" class="btn download-cv">Download CV</a>
     </section>
 
     <!-- Academic Projects -->
     <section id="projects" class="projects">
+
         <h2>Academic Projects</h2>
         <p>Here are some of the projects I've worked on.</p>
+
         <div class="project-grid">
             <div class="project-card">
-                <h3>[Project Name]</h3>
-                <p>[Project Description]</p>
-                <span class="tech-stack">VSCode, Node.js, HTML, CSS</span>
-                <a href="#" class="project-link">GitHub</a>
-                <a href="#" class="project-link">Live Demo</a>
+                <h3>Grocery Manager</h3>
+                <p>Make a grocery list manager. It must have the following features -</p>
+                <span class="tech-stack">VSCode, JavaScript</span>
+                <hr style="border: 1px solid #ccc; margin: 10px 0;">
+
+                <ul>
+                    <li>All items will be displayed in the page at all time. Don't forget to
+                        strikethrough the already-purchased products.</li>
+                    <li>How to strikethrough a text in HTML, you ask? Google it up. Make a
+                        habit to Google stuff you don't know.</li>
+                    <li>Clicking on any unpurchased item will cross it out. Clicking on it
+                        again will undo it.</li>
+                    <li>Add items. </li>
+                    <li>View only items left to purchase.</li>
+                    <li>View all the purchased items.</li>
+                </ul>
+
+                <a href="https://github.com/SnowmanZak/CSET105_Final1" class="project-link">GitHub</a>
+                <a href="https://snowmanzak.github.io/CSET105_Final1/" class="project-link">Live Demo</a>
             </div>
-            <!-- Repeat .project-card for each project -->
+            
+            <div class="project-card">
+                <h3>Quiz App</h3>
+                <p>Make a Quiz App with the following features - </p>
+                <span class="tech-stack">VSCode, Node.js, HTML, CSS, JavaScript</span>
+                <hr style="border: 1px solid #ccc; margin: 10px 0;">
+
+                <ul>
+                    <li>Store the questions and answers in an array of objects in your JS file.</li>
+                    <li>The options each are radio buttons. You can Google radio buttons in
+                        HTML for more information. The best site for these materials is probably
+                        w3school website</li>
+                    <li>Don't let the user submit unless an option is selected.</li>
+                    <li>When all the questions are answered, the score is displayed and a
+                        button to let the user reload and start from beginning. Google up how to
+                        reload a page in JS if needed or come up with your own solution.</li>
+                    <li>Design doesn't matter</li>
+                </ul>
+
+                <a href="https://github.com/SnowmanZak/CSET105_Final2" class="project-link">GitHub</a>
+                <a href="https://snowmanzak.github.io/CSET105_Final2/" class="project-link">Live Demo</a>
+            </div>
 
             
         </div>
@@ -107,19 +150,59 @@
                 <span>[Role]</span>
             </div>
             <!-- Repeat .testimonial-card for each testimonial -->
+
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <input type="text" placeholder="Subject">
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+
+    <!-- Contact section -->
+    <section id="contact"> 
+        <!-- Container for content -->
+        <div class="container"> 
+
+            <h2>Contact Us</h2>
+    
+            <!-- Flex container for form and address -->
+            <div class="flex"> 
+                <!-- Container for the contact form -->
+                <div id="form-container"> 
+
+                    <h3>Contact Form</h3> 
+
+                    <form>
+                        <label for="name">Name</label> 
+                        <input type="text" id="name" /> 
+    
+                        <label for="email">Email</label> 
+                        <input type="text" id="email" /> 
+    
+                        <label for="subject">Subject</label> 
+                        <input type="text" id="subject" /> 
+    
+                        <label for="message">Message</label> 
+                        <textarea id="message">Write your message here..</textarea>
+    
+                        <button class="rounded">Send Message</button> 
+                    </form>
+                </div>
+    
+                <!-- Container for contact information -->
+                <div id="address-container"> 
+
+                    <label>Address</label> 
+                    <address> 
+                        20377 Evergreen Terrace Mountain View, California, USA 
+                    </address>
+
+                    <label>Phone</label> 
+                    <a href="#">232-232-2323</a>
+
+                    <label>Email Address</label> 
+                    <a href="#">ouremail@domain.com</a>
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->

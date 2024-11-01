@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: grey;
     color: #fff;
     padding: 1rem;
     display: flex;
@@ -59,13 +59,19 @@ header nav ul li a {
     padding: 4rem 2rem;
     max-width: 1200px;
     margin: auto;
-    background-color: grey;
+    background-color: darkgrey;
 }
 
 .about .profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+ ul{
+    margin-left: 10px;
 }
 
 .btn {
@@ -88,6 +94,119 @@ header nav ul li a {
     background-color: #f9f9f9;
     border-radius: 5px;
 }
+
+
+/* start: contact us styles */
+/* Container styles for layout */
+.container {
+    max-width: 1140px; 
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+/* Flexbox styles for layout */
+.flex {
+    display: flex; 
+    justify-content: space-between; /* Distribute space between flex items */
+}
+
+/* Styles for the main contact section */
+#contact {
+    background: grey; 
+    padding: 4rem 0 8rem; /* Add vertical padding */
+}
+
+/* Styles for the section heading */
+#contact h2 {
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 4rem; 
+}
+
+/* Styles for the form container */
+#form-container {
+    width: 58%; 
+    background: #fff; 
+    padding: 3rem;
+    box-sizing: border-box; /* Include padding in the element's total width */
+    height: 0%; 
+}
+
+/* Styles for the form heading */
+#form-container h3 {
+    color: #000;
+    font-family: "Playfair Display", serif; /* Use Playfair Display font for the heading */
+    margin-bottom: 2rem; 
+}
+
+/* Styles for labels in the form */
+#form-container label {
+    display: block; 
+    color: #000; 
+    margin-top: 1rem; 
+}
+
+/* Styles for input fields and textarea in the form */
+#form-container input,
+#form-container textarea {
+    display: block; /* Make input fields and textarea block elements */
+    border-radius: 20px; 
+    padding: 10px; 
+    border: 1px solid #ced4da; 
+    width: 100%; 
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    height: 43px; 
+    font-family: "Roboto", "Helvetica", "Sans-serif"; /* Use Roboto font */
+    font-size: 1rem; 
+    color: #495057;
+}
+
+/* Styles for the textarea specifically */
+#form-container textarea {
+    height: 170px; 
+    margin-bottom: 2rem; 
+    resize: none; /* Disable resizing of the textarea */
+}
+
+/* Styles for the address container */
+#address-container {
+    width: 38%; 
+    background: #fff; 
+    padding: 1.5rem; 
+    box-sizing: border-box; /* Include padding in the element's total width */
+    height: 0%; 
+}
+
+/* Styles for labels in the address container */
+#address-container label {
+    font-weight: 700; /* Make label text bold */
+    display: block; 
+    margin-top: 2rem;
+}
+
+/* Remove top margin for the first label in the address container */
+#address-container label:first-child {
+    margin-top: 0;
+}
+
+/* Styles for address elements */
+#address-container address {
+    margin-bottom: 1.5rem; 
+    font-style: normal; /* Set normal font style for addresses */
+}
+
+/* Styles for links in the address container */
+#address-container a {
+    text-decoration: none; /* Remove underline from links */
+    color: #f69314;
+}
+
+/* Styles for links on hover in the address container */
+#address-container a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+
+
 
 footer {
     background-color: #333;
